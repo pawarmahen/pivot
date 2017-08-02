@@ -5,5 +5,12 @@
 }
 
 <h2>Pivot Table Demos</h2>
+<div id="output"></div>
+<link href="~/vendor/pivot.css" rel="stylesheet" />
+<script src="~/vendor/pivot.js"></script>
 <script src="~/js/pivot.js"></script>
-
+<script type="text/javascript">
+    $(document).ready(function () {
+        pivot.simplePivot({}, '#output');
+    });
+</script>
