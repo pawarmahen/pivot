@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "PivotWithJson";
+}
+@Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn" })
+<h2>PivotWithJson</h2>
+
+<div id="output">
+</div>
+@section script{
+
+    <script type="text/javascript">
+        var data = [
+            { color: "blue", shape: "circle" },
+            { color: "red", shape: "triangle" },
+            { color: "green", shape: "square" }
+        ];
+
+        var rowsArray = new Array();
+        rowsArray.push('color');
+        var colsArray = new Array();
+        colsArray.push('shape');
+        pivot.pivotWithJson(data, '#output', rowsArray, colsArray);
+    </script>
+
+}

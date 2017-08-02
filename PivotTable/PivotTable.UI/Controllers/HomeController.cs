@@ -13,5 +13,21 @@ namespace PivotTable.UI.Controllers
         {
             return View();
         }
+
+
+        public ActionResult SimplePivot()
+        {
+            return View();
+        }
+
+        public ActionResult PivotWithJson()
+        {
+            return View();
+        }
+
+        public ActionResult PivotUIWithJson()
+        {
+            return View();
+        }
     }
 }

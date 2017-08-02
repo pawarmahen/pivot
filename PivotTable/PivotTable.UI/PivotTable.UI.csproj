@@ -218,6 +218,9 @@
     <Content Include="vendor\pivot.zh.min.js.map" />
     <Content Include="vendor\pivot_spec.js.map" />
     <Content Include="vendor\pivot_spec.min.js.map" />
+    <Content Include="Views\Home\SimplePivot.cshtml" />
+    <Content Include="Views\Home\PivotWithJson.cshtml" />
+    <Content Include="Views\Home\PivotUIWithJson.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />

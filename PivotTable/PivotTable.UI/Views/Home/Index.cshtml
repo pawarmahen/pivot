@@ -4,13 +4,19 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Pivot Table Demos</h2>
-<div id="output"></div>
-<link href="~/vendor/pivot.css" rel="stylesheet" />
-<script src="~/vendor/pivot.js"></script>
-<script src="~/js/pivot.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        pivot.simplePivot({}, '#output');
-    });
-</script>
+
+<h2>Home</h2>
+<div class="row">
+    <div class="col-md-2">
+        @Html.ActionLink("Simple Pivot", "SimplePivot", "Home", null,new { @class = "btn btn-primary" })
+    </div>
+    <div class="col-md-2">
+        @Html.ActionLink("Pivot with Json", "PivotWithJson", "Home", null, new { @class = "btn btn-primary" })
+    </div>
+    <div class="col-md-2">
+        @Html.ActionLink("PivotUI with Json", "PivotUIWithJson", "Home", null, new { @class = "btn btn-primary" })
+    </div>
+    <div class="col-md-8"></div>
+</div>
+
+
