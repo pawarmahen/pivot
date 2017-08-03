@@ -4,11 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/c3.min.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/vendor/pivot.css" rel="stylesheet" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
-    
+    <style>
+        .hljs, .hljs-subst {
+            color: #000;
+            font-family: "Source Code Pro";
+        }
+
+        .hljs {
+            display: block;
+            overflow-x: auto;
+            padding: 0.5em;
+            background: #fff;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -22,8 +35,7 @@
                 @Html.ActionLink("Pivottable Demo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
+                <ul class="nav navbar-nav"></ul>
             </div>
         </div>
     </div>
@@ -35,18 +47,16 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="~/Scripts/jquery-1.12.4.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+    <script src="~/Scripts/d3.min.js"></script>
+    <script src="~/Scripts/c3.min.js"></script>
     <script src="~/vendor/pivot.js"></script>
     <script type="text/javascript" src="~/vendor/export_renderers.js"></script>
     <script type="text/javascript" src="~/vendor/d3_renderers.js"></script>
     <script type="text/javascript" src="~/vendor/c3_renderers.js"></script>
-
     <script src="~/js/pivot.js"></script>
-    
-    @RenderSection("script",false)
+    @RenderSection("script", false)
 </body>
 </html>

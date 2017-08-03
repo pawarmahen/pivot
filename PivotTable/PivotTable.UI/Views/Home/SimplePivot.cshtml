@@ -5,7 +5,15 @@
 }
 @Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn" })
 <h2>SimplePivot</h2>
-
+<div class="row">
+    <pre class="hljs">
+<code>
+        $(document).ready(function () {
+            pivot.simplePivot({}, '#output');
+        });
+</code>
+</pre>
+</div>
 <div id="output"></div>
 @section script{
     <script type="text/javascript">
